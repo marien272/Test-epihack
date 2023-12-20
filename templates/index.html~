@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cybersecurity Challenge</title>
+   <!-- Ajoutez d'autres balises d'en-tête au besoin -->
+</head>
+<body>
+
+<!-- Page d'accueil -->
+
+<h1>Cybersecurity Challenge</h1>
+
+<!-- Vulnérabilité XSS (à des fins éducatives uniquement) -->
+<h2>Welcome to our Cybersecurity Challenge!</h2>
+<p>This is an interactive platform for cybersecurity enthusiasts. Feel free to explore and test your skills!</p>
+
+<!-- Vulnérabilité SQL Injection (à des fins éducatives uniquement) -->
+<h2>Login</h2>
+<form action="login.php" method="post" onsubmit="return validateLogin()">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+
+    <button type="submit">Login</button>
+</form>
+
+<!-- Ajoutez d'autres éléments HTML au besoin -->
+
+<script>
+    function validateLogin() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Vérifiez les conditions du login
+        if (username === 'D&dstr0ke77' && password === 'Epiteqtkek1') {
+            alert('Login successful!'); // Vous pouvez personnaliser cette alerte
+            return true; // Permettre la soumission du formulaire
+        } else {
+            alert('Invalid username or password!'); // Vous pouvez personnaliser cette alerte
+            return false; // Empêcher la soumission du formulaire
+        }
+    }
+</script>
+
+</body>
+</html>
