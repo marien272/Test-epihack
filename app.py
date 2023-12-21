@@ -11,7 +11,7 @@ def login():
     username = request.form.get('username')
     password = request.form.get('password')
 
-    if username == 'D&dstr0ke77' and password == 'Epiteqtkek1':
+    if username == 'D&dstr0ke777' and password == 'EEpiteqtkek1':
         # Utilisateur authentifié, affichez le message
         return render_template('success.html', flag='ctf{sefb552}')
     else:
